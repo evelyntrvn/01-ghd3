@@ -11,10 +11,10 @@ I had originally wanted to create a still image for this assignment, but after l
 * Prototype: GoodNotes5 with Apple Pencil
 
 ## Images
-#### Prototype
-![Prototype](/images/prototype.jpg)
-#### Night to Day animation
-![Prototype](/images/night_to_day.gif)
+Prototype
+![Prototype image](/images/prototype.jpg)
+Night to Day animation
+![Animation gif](/images/night_to_day.gif)
 
 ## Technical Achievement
 * Making the buildings move indefinetly
