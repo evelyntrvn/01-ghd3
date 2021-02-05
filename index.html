@@ -37,11 +37,8 @@
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <svg id="vis">
   <defs>
-    <linearGradient id="city" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#d1d1d1"/>
-      <stop offset="100%" stop-color="#111111"/>
-    </linearGradient>
-</defs>
+    <linearGradient id="city" x1="0" x2="0" y1="0" y2="1"></linearGradient>
+  </defs>
 </svg>
 <button id="button" onclick="changeTime()">Change Time</button> 
 <script>
@@ -126,12 +123,7 @@
   .map(function(i) {
       var gradient = defs.append("linearGradient")
         .attr("id", "g" + i);
-      d = {
-        stops: [
-          gradient.append("stop"),
-          gradient.append("stop")
-       ]
-      };
+      d = {};
       randomize(d);
       d.x += i * (width / numBuildings);
         return d;
