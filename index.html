@@ -1,3 +1,38 @@
+<style>
+  body{
+    background-color: #b2bfd9;
+  }
+  #vis{
+    margin-top:20;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+  }
+  #button{
+    margin-top: 20;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    border: none;
+    background-color: #526eab;
+    color:rgb(235, 227, 212);
+    padding: 15px 25px;
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 9px #29488c;
+    cursor: pointer;
+  }
+  #button:hover {
+    background-color: #466099;}
+  #button:active {
+    background-color: #466099;
+    box-shadow: 0 5px #29488c;
+    transform: translateY(4px);
+  }
+  #button:focus {outline:0;}
+</style>
+
 <script src="https://d3js.org/d3.v6.min.js"></script>
 <svg id="vis">
   <defs>
@@ -7,7 +42,7 @@
     </linearGradient>
 </defs>
 </svg>
-<button onclick="changeTime()">Change Time</button> 
+<button id="button" onclick="changeTime()">Change Time</button> 
 <script>
   console.log(d3);
 
